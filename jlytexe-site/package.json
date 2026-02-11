@@ -1,0 +1,27 @@
+{
+  "name": "jlytexe-site",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -C apps/web dev",
+    "dev:api": "pnpm -C apps/api dev",
+    "build": "pnpm -C apps/web build && pnpm -C apps/api build",
+    "preview": "pnpm -C apps/web preview",
+    "lint": "eslint . --ext .ts,.tsx,.js",
+    "format": "prettier --write .",
+    "test": "pnpm -C apps/web test"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.2.5",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "typescript": "^5.3.3"
+  }
+}

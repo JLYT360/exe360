@@ -1,0 +1,8 @@
+/* Background image pour le développement local */
+body.home-page {
+  background-image: url('/assets/images/accueil.JPG') !important;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { ASSETS_PATH } from '../config/paths'
 import jeromePhoto from '../assets/images/Jerome.jpg'
 
 export default function About() {
@@ -95,8 +96,8 @@ export default function About() {
             <div className="trust-item">✓ Dossiers propres pour votre expert‑comptable</div>
           </div>
           <div className="trust-docs">
-            <a href="/jlytexe-site/assets/docs/memo-precompta.pdf" className="doc-link">📄 Mémo pré‑compta</a>
-            <a href="/jlytexe-site/assets/docs/politique-ethique.pdf" className="doc-link">📄 Politique éthique</a>
+            <a href={`${ASSETS_PATH}/docs/memo-precompta.pdf`} className="doc-link">📄 Mémo pré‑compta</a>
+            <a href={`${ASSETS_PATH}/docs/politique-ethique.pdf`} className="doc-link">📄 Politique éthique</a>
           </div>
         </section>
 

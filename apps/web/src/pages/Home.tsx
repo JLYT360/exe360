@@ -23,8 +23,8 @@ export default function Home(){
             Assistance administrative · Pré‑comptabilité (préparation) · Marketing stratégique · Support & Formation — en Martinique.
           </p>
           <div className="cta-group">
-            <Link to="/jlytexe-site/contact" className="btn-primary btn-hero">Recevoir un plan d'action gratuit (1h)</Link>
-            <Link to="/jlytexe-site/tarifs" className="btn-secondary">Voir les offres</Link>
+            <Link to="${BASE_PATH}contact" className="btn-primary btn-hero">Recevoir un plan d'action gratuit (1h)</Link>
+            <Link to="${BASE_PATH}tarifs" className="btn-secondary">Voir les offres</Link>
           </div>
           <p className="micro-value">
             Je vous réponds habituellement sous 24–48 h ouvrées pour planifier un premier échange.
@@ -36,22 +36,22 @@ export default function Home(){
           </div>
         </section>
         <section className="grid">
-          <Link to="/jlytexe-site/services/marketing-strategique" className="card card-clickable">
+          <Link to="${BASE_PATH}services/marketing-strategique" className="card card-clickable">
             <h3>🎯 Marketing stratégique</h3>
             <p>Stratégie claire pour votre croissance.<br/>Avancez avec une direction précise et mesurable.</p>
             <div className="card-arrow">→</div>
           </Link>
-          <Link to="/jlytexe-site/services/assistance-administrative" className="card card-clickable">
+          <Link to="${BASE_PATH}services/assistance-administrative" className="card card-clickable">
             <h3>🗂️ Assistance administrative</h3>
             <p>Gagnez du temps, gardez l'esprit libre.<br/>Vous restez sur votre métier, je m'occupe du reste.</p>
             <div className="card-arrow">→</div>
           </Link>
-          <Link to="/jlytexe-site/services/precomptabilite" className="card card-clickable">
+          <Link to="${BASE_PATH}services/precomptabilite" className="card card-clickable">
             <h3>🧾 Pré‑comptabilité (préparation)</h3>
             <p>Préparation fiable pour votre expert-comptable.<br/>Dossier propre, zéro relance, moins de stress.</p>
             <div className="card-arrow">→</div>
           </Link>
-          <Link to="/jlytexe-site/services/support-informatique" className="card card-clickable">
+          <Link to="${BASE_PATH}services/support-informatique" className="card card-clickable">
             <h3>💻 Support & Formation</h3>
             <p>Votre numérique, maîtrisé et simplifié.<br/>Cloud, sécurité, Word/Excel/Drive.</p>
             <div className="card-arrow">→</div>

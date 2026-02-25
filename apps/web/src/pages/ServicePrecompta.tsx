@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { BASE_PATH } from '../config/paths'
 
 export default function ServicePrecompta() {
   return (
@@ -69,7 +70,7 @@ export default function ServicePrecompta() {
         <section className="cta-section">
           <h2>Une comptabilité sereine</h2>
           <p>Confiez-nous votre pré-comptabilité et présentez des dossiers parfaits à votre expert-comptable.</p>
-          <a href="/jlytexe-site/contact" className="btn btn-primary">Demander un diagnostic comptable</a>
+          <a href={`${BASE_PATH}contact`} className="btn btn-primary">Demander un diagnostic comptable</a>
         </section>
       </main>
       <Footer />

@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { BASE_PATH } from '../config/paths'
 
 export default function ServiceMarketing() {
   return (
@@ -65,7 +66,7 @@ export default function ServiceMarketing() {
         <section className="cta-section">
           <h2>Prêt à développer votre activité ?</h2>
           <p>Contactez-nous pour un diagnostic stratégique gratuit de 30 minutes.</p>
-          <a href="/jlytexe-site/contact" className="btn btn-primary">Demander un diagnostic</a>
+          <a href={`${BASE_PATH}contact`} className="btn btn-primary">Demander un diagnostic</a>
         </section>
       </main>
       <Footer />

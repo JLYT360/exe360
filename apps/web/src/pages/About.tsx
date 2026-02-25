@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import { ASSETS_PATH } from '../config/paths'
+import { BASE_PATH, ASSETS_PATH } from '../config/paths'
 import jeromePhoto from '../assets/images/Jerome.jpg'
 
 export default function About() {
@@ -38,7 +38,7 @@ export default function About() {
             </div>
           </div>
           <div className="cta-group">
-            <a href="/jlytexe-site/contact" className="btn-primary">Discutons de votre projet</a>
+            <a href={`${BASE_PATH}contact`} className="btn-primary">Discutons de votre projet</a>
           </div>
         </section>
 

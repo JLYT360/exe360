@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { BASE_PATH } from '../config/paths'
 
 export default function ServiceAdmin() {
   return (
@@ -66,7 +67,7 @@ export default function ServiceAdmin() {
         <section className="cta-section">
           <h2>Simplifiez votre administration</h2>
           <p>Laissez-nous gérer vos tâches administratives pour vous concentrer sur votre cœur de métier.</p>
-          <a href="/jlytexe-site/contact" className="btn btn-primary">Demander un devis</a>
+          <a href={`${BASE_PATH}contact`} className="btn btn-primary">Demander un devis</a>
         </section>
       </main>
       <Footer />

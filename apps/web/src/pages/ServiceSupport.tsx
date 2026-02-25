@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { BASE_PATH } from '../config/paths'
 
 export default function ServiceSupport() {
   return (
@@ -86,7 +87,7 @@ export default function ServiceSupport() {
         <section className="cta-section">
           <h2>Maîtrisez vos outils numériques</h2>
           <p>Gagnez en efficacité avec un support technique et des formations adaptées à vos besoins.</p>
-          <a href="/jlytexe-site/contact" className="btn btn-primary">Demander un diagnostic numérique</a>
+          <a href={`${BASE_PATH}contact`} className="btn btn-primary">Demander un diagnostic numérique</a>
         </section>
       </main>
       <Footer />

@@ -268,7 +268,7 @@ export default function Strategy() {
 
           <div className="contact-section">
             <h3>Me contacter</h3>
-            <a href="/jlytexe-site/contact" className="btn-primary">Prendre rendez-vous</a>
+            <a href="${BASE_PATH}contact" className="btn-primary">Prendre rendez-vous</a>
           </div>
 
           {/* Formulaire détaillé d'évaluation */}
@@ -877,7 +877,7 @@ export default function Strategy() {
                 <button onClick={() => setSent(false)} className="btn-secondary">
                   🔄 Faire une nouvelle évaluation
                 </button>
-                <a href="/jlytexe-site/contact" className="btn-outline">
+                <a href="${BASE_PATH}contact" className="btn-outline">
                   📝 Contact direct
                 </a>
               </div>

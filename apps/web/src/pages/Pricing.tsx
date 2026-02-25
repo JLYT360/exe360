@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { BASE_PATH } from '../config/paths'
 
 export default function Pricing(){
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function Pricing(){
               <p className="price-amount">120€</p>
               <p>Organisation, relances, modèles</p>
               <small className="benefit">Testez l'organisation sans risque</small>
-              <a href="/jlytexe-site/services/assistance-administrative" className="btn btn-primary">Découvrir ce qui est inclus</a>
+              <a href={`${BASE_PATH}services/assistance-administrative`} className="btn btn-primary">Découvrir ce qui est inclus</a>
             </div>
 
             <div className="pricing-card">
@@ -42,7 +43,7 @@ export default function Pricing(){
               <p className="price-amount">140€</p>
               <p>Saisie, préparation, tableaux de bord</p>
               <small className="benefit">Dossier propre pour votre expert-comptable</small>
-              <a href="/jlytexe-site/services/precomptabilite" className="btn btn-primary">Découvrir ce qui est inclus</a>
+              <a href={`${BASE_PATH}services/precomptabilite`} className="btn btn-primary">Découvrir ce qui est inclus</a>
             </div>
 
             <div className="pricing-card featured">
@@ -51,7 +52,7 @@ export default function Pricing(){
               <p className="price-amount">200€</p>
               <p>Plans marketing, lancement, croissance</p>
               <small className="benefit">Direction claire et actions mesurables</small>
-              <a href="/jlytexe-site/services/marketing-strategique" className="btn btn-primary">Découvrir ce qui est inclus</a>
+              <a href={`${BASE_PATH}services/marketing-strategique`} className="btn btn-primary">Découvrir ce qui est inclus</a>
             </div>
 
             <div className="pricing-card">
@@ -60,7 +61,7 @@ export default function Pricing(){
               <p className="price-amount">150€</p>
               <p>Dépannage, cloud, formations</p>
               <small className="benefit">Gagnez en autonomie numérique</small>
-              <a href="/jlytexe-site/services/support-informatique" className="btn btn-primary">Découvrir ce qui est inclus</a>
+              <a href={`${BASE_PATH}services/support-informatique`} className="btn btn-primary">Découvrir ce qui est inclus</a>
             </div>
           </div>
         </section>
@@ -74,7 +75,7 @@ export default function Pricing(){
               <p className="price-amount">420€/mois</p>
               <p>Suivi continu et prioritaire</p>
               <small className="benefit">Jusqu'à ½ journée gagnée / semaine</small>
-              <a href="/jlytexe-site/contact?pack=admin-mensuel" className="btn btn-secondary">Commencer avec ce pack</a>
+              <a href={`${BASE_PATH}contact?pack=admin-mensuel`} className="btn btn-secondary">Commencer avec ce pack</a>
             </div>
 
             <div className="pricing-card">
@@ -83,7 +84,7 @@ export default function Pricing(){
               <p className="price-amount">500€/mois</p>
               <p>Gestion comptable mensuelle</p>
               <small className="benefit">Dossier "prêt EC" chaque mois</small>
-              <a href="/jlytexe-site/contact?pack=precompta-mensuel" className="btn btn-secondary">Commencer avec ce pack</a>
+              <a href={`${BASE_PATH}contact?pack=precompta-mensuel`} className="btn btn-secondary">Commencer avec ce pack</a>
             </div>
 
             <div className="pricing-card featured">
@@ -92,7 +93,7 @@ export default function Pricing(){
               <p className="price-amount">350€/mois</p>
               <p>Stratégie et pilotage continu</p>
               <small className="benefit">Pilotage continu et décisions plus claires</small>
-              <a href="/jlytexe-site/contact?pack=marketing-mensuel" className="btn btn-secondary">Commencer avec ce pack</a>
+              <a href={`${BASE_PATH}contact?pack=marketing-mensuel`} className="btn btn-secondary">Commencer avec ce pack</a>
             </div>
           </div>
         </section>
@@ -104,19 +105,19 @@ export default function Pricing(){
               <h4>Plan marketing complet</h4>
               <p className="project-price">450–650€</p>
               <p>Analyse, stratégie, feuille de route complète</p>
-              <a href="/jlytexe-site/contact?pack=plan-marketing" className="btn btn-outline">Commencer ce projet</a>
+              <a href="${BASE_PATH}contact?pack=plan-marketing" className="btn btn-outline">Commencer ce projet</a>
             </div>
             <div className="project-item">
               <h4>Plan de communication</h4>
               <p className="project-price">350–550€</p>
               <p>Messages, canaux, calendrier éditorial</p>
-              <a href="/jlytexe-site/contact?pack=plan-communication" className="btn btn-outline">Commencer ce projet</a>
+              <a href="${BASE_PATH}contact?pack=plan-communication" className="btn btn-outline">Commencer ce projet</a>
             </div>
             <div className="project-item">
               <h4>Stratégie de lancement</h4>
               <p className="project-price">400–700€</p>
               <p>Go-to-market, premières campagnes</p>
-              <a href="/jlytexe-site/contact?pack=strategie-lancement" className="btn btn-outline">Commencer ce projet</a>
+              <a href="${BASE_PATH}contact?pack=strategie-lancement" className="btn btn-outline">Commencer ce projet</a>
             </div>
           </div>
         </section>
@@ -130,7 +131,7 @@ export default function Pricing(){
               <p className="price-amount">450€</p>
               <p>Admin 5h + Marketing 5h + 1 diagnostic gratuit</p>
               <small className="benefit">Lancement optimisé pour nouvelles entreprises</small>
-              <a href="/jlytexe-site/contact?pack=lancement" className="btn btn-primary">Commencer avec ce pack</a>
+              <a href={`${BASE_PATH}contact?pack=lancement`} className="btn btn-primary">Commencer avec ce pack</a>
             </div>
 
             <div className="pricing-card featured">
@@ -139,7 +140,7 @@ export default function Pricing(){
               <p className="price-amount">770€/mois</p>
               <p>Admin mensuel + Marketing mensuel (20h au total)</p>
               <small className="benefit">Croissance continue avec suivi prioritaire</small>
-              <a href="/jlytexe-site/contact?pack=croissance" className="btn btn-primary">Commencer avec ce pack</a>
+              <a href={`${BASE_PATH}contact?pack=croissance`} className="btn btn-primary">Commencer avec ce pack</a>
             </div>
 
             <div className="pricing-card">
@@ -148,7 +149,7 @@ export default function Pricing(){
               <p className="price-amount">920€/mois</p>
               <p>Admin + Pré-compta + Marketing mensuel</p>
               <small className="benefit">Gestion complète externalisée</small>
-              <a href="/jlytexe-site/contact?pack=accompagnement-tpe" className="btn btn-primary">Commencer avec ce pack</a>
+              <a href={`${BASE_PATH}contact?pack=accompagnement-tpe`} className="btn btn-primary">Commencer avec ce pack</a>
             </div>
           </div>
         </section>
@@ -160,7 +161,7 @@ export default function Pricing(){
         <section className="cta-section">
           <h2>Vous avez des questions ?</h2>
           <p>Contactez-moi pour un devis personnalisé</p>
-          <a href="/jlytexe-site/contact" className="btn btn-primary">Commencer</a>
+          <a href={`${BASE_PATH}contact`} className="btn btn-primary">Commencer</a>
         </section>
       </main>
       <Footer />

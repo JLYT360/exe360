@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { BASE_PATH } from '../config/paths'
 
 // Articles importés depuis WordPress (extraits du XML)
 const wordpressArticles = [
@@ -232,7 +233,7 @@ export default function Blog(){
               className={`tab-btn ${activeTab === 'blog' ? 'active' : ''}`}
               onClick={() => setActiveTab('blog')}
             >
-              � Blog & Articles
+              📝 Blog & Articles
             </button>
           </div>
         </div>
@@ -269,7 +270,7 @@ export default function Blog(){
                     <div className="blog-author">
                       <span>Par {article.author}</span>
                     </div>
-                    <a href={`/jlytexe-site/blog/${article.slug}`} className="btn btn-primary">
+                    <a href={`${BASE_PATH}blog/${article.slug}`} className="btn btn-primary">
                       Lire l'article
                     </a>
                   </div>
@@ -394,7 +395,7 @@ export default function Blog(){
         <section className="cta-section">
           <h2>Vous avez des questions sur ces sujets ?</h2>
           <p>Discutons-en lors d'un diagnostic gratuit</p>
-          <a href="/jlytexe-site/contact" className="btn-primary">Prendre rendez-vous</a>
+          <a href={`${BASE_PATH}contact`} className="btn-primary">Prendre rendez-vous</a>
         </section>
       </main>
       <Footer />

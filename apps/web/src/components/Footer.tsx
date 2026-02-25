@@ -1,5 +1,7 @@
 
 import React from 'react'
+import { BASE_PATH } from '../config/paths'
+
 export default function Footer(){
   return (
     <footer>
@@ -23,9 +25,9 @@ export default function Footer(){
               Comptes annuels et déclarations fiscales réalisés par un expert‑comptable.
             </p>
             <div className="legal-links">
-              <a href="/jlytexe-site/mentions-legales">Mentions légales</a>
+              <a href={`${BASE_PATH}mentions-legales`}>Mentions légales</a>
               <span> • </span>
-              <a href="/jlytexe-site/politique-confidentialite">Politique de confidentialité</a>
+              <a href={`${BASE_PATH}politique-confidentialite`}>Politique de confidentialité</a>
             </div>
           </div>
         </div>

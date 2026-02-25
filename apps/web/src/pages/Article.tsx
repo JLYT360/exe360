@@ -120,7 +120,7 @@ export default function Article(){
           <div className="error-message">
             <h1>Article non trouvé</h1>
             <p>Cet article n'existe pas ou a été déplacé.</p>
-            <Link to="/jlytexe-site/blog" className="btn btn-primary">Retour au blog</Link>
+            <Link to="${BASE_PATH}blog" className="btn btn-primary">Retour au blog</Link>
           </div>
         </main>
         <Footer />
@@ -134,7 +134,7 @@ export default function Article(){
       <main className="container">
         <article className="article-detail">
           <div className="article-header">
-            <Link to="/jlytexe-site/blog" className="back-link">← Retour au blog</Link>
+            <Link to="${BASE_PATH}blog" className="back-link">← Retour au blog</Link>
             <div className="article-meta">
               <span className="article-category">{article.category}</span>
               <span className="article-date">{article.date}</span>
@@ -149,8 +149,8 @@ export default function Article(){
           
           <div className="article-footer">
             <div className="article-actions">
-              <Link to="/jlytexe-site/blog" className="btn btn-secondary">Retour au blog</Link>
-              <Link to="/jlytexe-site/contact" className="btn btn-primary">Discuter de cet article</Link>
+              <Link to="${BASE_PATH}blog" className="btn btn-secondary">Retour au blog</Link>
+              <Link to="${BASE_PATH}contact" className="btn btn-primary">Discuter de cet article</Link>
             </div>
           </div>
         </article>

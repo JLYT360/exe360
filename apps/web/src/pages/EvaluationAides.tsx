@@ -110,11 +110,7 @@ export default function EvaluationAides() {
     }
 
     try {
-      await sendStrategyEmail({
-        ...formData,
-        sujet: 'Évaluation aides et financement',
-        type: 'evaluation-aides'
-      })
+      await sendStrategyEmail(formData)
       
       setSent(true)
     } catch (err) {
@@ -178,7 +174,6 @@ export default function EvaluationAides() {
                 <option value="eurl">EURL</option>
                 <option value="sasu">SASU</option>
                 <option value="sarl">SARL</option>
-                <option value="sasu">SASU</option>
                 <option value="sa">SA</option>
                 <option value="autre">Autre</option>
               </select>

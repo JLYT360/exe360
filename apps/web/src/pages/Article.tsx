@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { BASE_PATH } from '../config/paths'
 
 // Articles complets importés depuis WordPress
 const wordpressArticles = {
@@ -120,7 +121,7 @@ export default function Article(){
           <div className="error-message">
             <h1>Article non trouvé</h1>
             <p>Cet article n'existe pas ou a été déplacé.</p>
-            <Link to="${BASE_PATH}blog" className="btn btn-primary">Retour au blog</Link>
+            <Link to={`${BASE_PATH}blog`} className="btn btn-primary">Retour au blog</Link>
           </div>
         </main>
         <Footer />
@@ -134,7 +135,7 @@ export default function Article(){
       <main className="container">
         <article className="article-detail">
           <div className="article-header">
-            <Link to="${BASE_PATH}blog" className="back-link">← Retour au blog</Link>
+            <Link to={`${BASE_PATH}blog`} className="back-link">← Retour au blog</Link>
             <div className="article-meta">
               <span className="article-category">{article.category}</span>
               <span className="article-date">{article.date}</span>
@@ -149,8 +150,8 @@ export default function Article(){
           
           <div className="article-footer">
             <div className="article-actions">
-              <Link to="${BASE_PATH}blog" className="btn btn-secondary">Retour au blog</Link>
-              <Link to="${BASE_PATH}contact" className="btn btn-primary">Discuter de cet article</Link>
+              <Link to={`${BASE_PATH}blog`} className="btn btn-secondary">Retour au blog</Link>
+              <Link to={`${BASE_PATH}contact`} className="btn btn-primary">Discuter de cet article</Link>
             </div>
           </div>
         </article>

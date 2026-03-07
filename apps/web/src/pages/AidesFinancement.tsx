@@ -67,6 +67,27 @@ export default function AidesFinancement() {
     <>
       <NavBar />
       <main className="container">
+        <section className="hero aides-hero">
+          <h1>Aides & Financement</h1>
+          <p className="subtitle">
+            Des dizaines de dispositifs existent en Martinique — subventions, prêts d'honneur, microcrédits, fonds européens.
+            La difficulté, c'est de savoir lesquels vous correspondent, comment monter le dossier, et à qui s'adresser.
+          </p>
+          <p className="micro-value">
+            Je cartographie les aides adaptées à votre situation, je structure votre dossier, et je vous accompagne dans les démarches — pour que vous ne perdiez pas de temps à naviguer seul dans ces dispositifs.
+          </p>
+          <div className="disclaimer-box">
+            <p>
+              ⚠️ <strong>Important :</strong> L'accompagnement JLYTEXE consiste à identifier et structurer vos demandes.
+              L'obtention des aides dépend des organismes concernés et ne peut être garantie.
+            </p>
+          </div>
+          <div className="cta-group">
+            <a href={`${BASE_PATH}contact`} className="btn-primary btn-hero">Diagnostic gratuit (1h)</a>
+            <a href={`${BASE_PATH}evaluation-aides`} className="btn-secondary">Évaluer mon éligibilité</a>
+          </div>
+        </section>
+
         <section className="organismes-section">
           <h2>🏢 Principaux organismes d'aides en Martinique</h2>
           <div className="organismes-grid">

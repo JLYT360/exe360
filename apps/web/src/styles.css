@@ -81,6 +81,108 @@ a{ color:var(--brand-blue); text-decoration:none }
 }
 
 /* Styles pour la page Aides & Financement */
+.aides-hero {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 16px;
+  margin-bottom: 48px;
+}
+
+.aides-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--brand-black);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.aides-hero .subtitle {
+  font-size: 1.3rem;
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+}
+
+.aides-hero .micro-value {
+  font-size: 1.1rem;
+  color: var(--brand-blue);
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background: rgba(31, 111, 235, 0.05);
+  border-left: 4px solid var(--brand-blue);
+  border-radius: 8px;
+}
+
+.disclaimer-box {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto 40px auto;
+  max-width: 600px;
+}
+
+.disclaimer-box p {
+  margin: 0;
+  color: #92400e;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.disclaimer-box strong {
+  color: #78350f;
+}
+
+.cta-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-hero {
+  font-size: 1.2rem;
+  padding: 16px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .aides-hero {
+    padding: 60px 20px;
+  }
+  
+  .aides-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .aides-hero .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .cta-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-hero {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 .organismes-section {
   margin: 48px 0;
 }

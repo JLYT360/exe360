@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { BASE_PATH, ASSETS_PATH } from '../config/paths'

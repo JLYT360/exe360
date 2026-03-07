@@ -1,4 +1,3 @@
-import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, ScrollRestoration } from 'react-router-dom'
 import Home from './pages/Home'
@@ -7,7 +6,6 @@ import ServiceMarketing from './pages/ServiceMarketing'
 import ServiceAdmin from './pages/ServiceAdmin'
 import ServicePrecompta from './pages/ServicePrecompta'
 import ServiceSupport from './pages/ServiceSupport'
-import Pricing from './pages/Pricing'
 import Blog from './pages/Blog'
 import Article from './pages/Article'
 import Contact from './pages/Contact'
@@ -23,7 +21,6 @@ const router = createBrowserRouter([
   { path: '/jlytexe-site/services/assistance-administrative', element: <><ScrollRestoration /><ServiceAdmin /></> },
   { path: '/jlytexe-site/services/precomptabilite', element: <><ScrollRestoration /><ServicePrecompta /></> },
   { path: '/jlytexe-site/services/support-informatique', element: <><ScrollRestoration /><ServiceSupport /></> },
-  { path: '/jlytexe-site/tarifs', element: <><ScrollRestoration /><Pricing /></> },
   { path: '/jlytexe-site/blog', element: <><ScrollRestoration /><Blog /></> },
   { path: '/jlytexe-site/blog/:slug', element: <><ScrollRestoration /><Article /></> },
   { path: '/jlytexe-site/contact', element: <><ScrollRestoration /><Contact /></> },

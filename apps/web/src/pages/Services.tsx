@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { BASE_PATH } from '../config/paths'
@@ -31,8 +31,8 @@ export default function Services(){
             <h3>Marketing stratégique</h3>
             <p>Plans marketing & communication, lancement, croissance, pilotage.</p>
             <ul>
-              <li>Plans marketing & communication (analyse, positionnement, feuille de route)</li>
-              <li>Lancement d'activité / offre</li>
+              <li>Plans marketing &amp; communication (analyse, positionnement, feuille de route)</li>
+              <li>Lancement d&apos;activité / offre</li>
               <li>Stratégies de croissance (90 jours)</li>
             </ul>
             <div className="service-price">À partir de 45€/h</div>
@@ -54,9 +54,9 @@ export default function Services(){
           <div className="service-card">
             <div className="service-icon">🧾</div>
             <h3>Pré‑comptabilité</h3>
-            <p>Saisie & préparation pour l'expert‑comptable, tableaux de bord.</p>
+            <p>Saisie &amp; préparation pour l&apos;expert-comptable, tableaux de bord.</p>
             <ul>
-              <li>Saisie de pièces, préparation pour votre expert‑comptable</li>
+              <li>Saisie de pièces, préparation pour votre expert-comptable</li>
               <li>Suivi factures/dépenses, tableaux de bord</li>
             </ul>
             <div className="service-price">À partir de 35€/h</div>
@@ -79,9 +79,8 @@ export default function Services(){
         <section className="cta-section">
           <h2>Prêt à optimiser votre organisation ?</h2>
           <p>Profitez de 1h offerte pour un diagnostic complet et personnalisé</p>
-          <div style={{display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '24px'}}>
+          <div className="cta-buttons">
             <a href={`${BASE_PATH}contact`} className="btn-primary">Diagnostic express</a>
-            <a href={`${BASE_PATH}tarifs`} className="btn-secondary">Voir tous les tarifs</a>
           </div>
         </section>
       </main>

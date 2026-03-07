@@ -1,4 +1,3 @@
-import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { BASE_PATH } from '../config/paths'
@@ -56,27 +55,31 @@ export default function ServiceSupport() {
         </section>
 
         <section className="pricing-section">
-          <h2>Forfaits support & formation</h2>
+          <h2>Forfaits support &amp; formation</h2>
           <div className="pricing-grid">
             <div className="pricing-card">
               <h3>5 heures</h3>
               <div className="price">150 €</div>
               <p>Intervention ponctuelle</p>
+              <a href={`${BASE_PATH}contact?pack=support-5h`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card">
               <h3>10 heures</h3>
               <div className="price">280 €</div>
               <p>Formation complète</p>
+              <a href={`${BASE_PATH}contact?pack=support-10h`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card featured">
               <h3>Mensuel (10h)</h3>
               <div className="price">260 €/mois</div>
               <p>Maintenance & formation</p>
+              <a href={`${BASE_PATH}contact?pack=support-mensuel`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card">
               <h3>Annuel (120h)</h3>
               <div className="price">2 880 €/an</div>
               <p>Partenaire informatique</p>
+              <a href={`${BASE_PATH}contact?pack=support-annuel`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
           </div>
           <div className="hourly-rate">
@@ -87,7 +90,7 @@ export default function ServiceSupport() {
         <section className="cta-section">
           <h2>Maîtrisez vos outils numériques</h2>
           <p>Gagnez en efficacité avec un support technique et des formations adaptées à vos besoins.</p>
-          <a href={`${BASE_PATH}contact`} className="btn btn-primary">Demander un diagnostic numérique</a>
+          <a href={`${BASE_PATH}contact?pack=support-diagnostic`} className="btn btn-primary">Demander un diagnostic numérique</a>
         </section>
       </main>
       <Footer />

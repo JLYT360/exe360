@@ -4,6 +4,33 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { initEmailJS, sendContactEmail } from '../lib/emailjs'
 
+// Mapping des packs vers descriptions
+const PACK_DESCRIPTIONS: { [key: string]: string } = {
+  'marketing-5h': 'Forfait Marketing 5h - Diagnostic stratégique initial (200€)',
+  'marketing-10h': 'Forfait Marketing 10h - Plan d\'action complet (380€)',
+  'marketing-mensuel': 'Forfait Marketing Mensuel 10h - Accompagnement continu (350€/mois)',
+  'marketing-annuel': 'Forfait Marketing Annuel 120h - Partenaire stratégique (3 800€/an)',
+  'marketing-diagnostic': 'Diagnostic Marketing stratégique gratuit 30min',
+  
+  'admin-5h': 'Forfait Administration 5h - Mise en place initiale (120€)',
+  'admin-10h': 'Forfait Administration 10h - Organisation complète (220€)',
+  'admin-mensuel': 'Forfait Administration Mensuel 20h - Gestion administrative continue (420€/mois)',
+  'admin-annuel': 'Forfait Administration Annuel 240h - Partenaire administratif (4 500€/an)',
+  'admin-devis': 'Devis personnalisé pour services administratifs',
+  
+  'precompta-5h': 'Forfait Pré-comptabilité 5h - Mise en place initiale (140€)',
+  'precompta-10h': 'Forfait Pré-comptabilité 10h - Organisation mensuelle (260€)',
+  'precompta-mensuel': 'Forfait Pré-comptabilité Mensuel 20h - Gestion comptable complète (500€/mois)',
+  'precompta-annuel': 'Forfait Pré-comptabilité Annuel 240h - Partenaire comptable (5 400€/an)',
+  'precompta-diagnostic': 'Diagnostic Pré-comptabilité gratuit',
+  
+  'support-5h': 'Forfait Support 5h - Intervention ponctuelle (150€)',
+  'support-10h': 'Forfait Support 10h - Formation complète (280€)',
+  'support-mensuel': 'Forfait Support Mensuel 10h - Maintenance & formation (260€/mois)',
+  'support-annuel': 'Forfait Support Annuel 120h - Partenaire informatique (2 880€/an)',
+  'support-diagnostic': 'Diagnostic numérique gratuit'
+}
+
 export default function Contact(){
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -36,6 +63,21 @@ export default function Contact(){
     
     // Initialiser EmailJS au chargement du composant
     initEmailJS()
+    
+    // Lire les paramètres URL pour pré-remplir le formulaire
+    const urlParams = new URLSearchParams(window.location.search)
+    const pack = urlParams.get('pack')
+    
+    if (pack && PACK_DESCRIPTIONS[pack]) {
+      setFormData(prev => ({
+        ...prev,
+        subject: pack.includes('marketing') ? 'marketing' : 
+                  pack.includes('admin') ? 'admin' : 
+                  pack.includes('precompta') ? 'precompta' : 
+                  pack.includes('support') ? 'support' : 'autre',
+        message: PACK_DESCRIPTIONS[pack]
+      }))
+    }
   }, [])
 
   const validateEmail = (email: string) => {

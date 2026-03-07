@@ -1,4 +1,3 @@
-import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { BASE_PATH } from '../config/paths'
@@ -12,7 +11,7 @@ export default function ServicePrecompta() {
           <h1>Pré-comptabilité</h1>
           <p className="service-intro">Saisie, préparation et suivi comptable pour présenter des dossiers parfaits à votre expert-comptable.</p>
           <div className="important-note">
-            <p><strong>Important :</strong> Nous préparons vos comptes mais l'établissement des comptes annuels reste la compétence de votre expert-comptable.</p>
+            <p><strong>Important :</strong> Nous préparons vos comptes mais l&apos;établissement des comptes annuels reste la compétence de votre expert-comptable.</p>
           </div>
         </div>
 
@@ -21,11 +20,11 @@ export default function ServicePrecompta() {
           <div className="service-list">
             <div className="service-item">
               <h3>📝 Saisie des pièces</h3>
-              <p>Saisie des factures d'achat et de vente, notes de frais, relevés bancaires.</p>
+              <p>Saisie des factures d&apos;achat et de vente, notes de frais, relevés bancaires.</p>
             </div>
             <div className="service-item">
               <h3>📊 Tableaux de bord</h3>
-              <p>Suivi chiffre d'affaires, trésorerie, charges, délais de paiement.</p>
+              <p>Suivi chiffre d&apos;affaires, trésorerie, charges, délais de paiement.</p>
             </div>
             <div className="service-item">
               <h3>📋 Préparation déclarations</h3>
@@ -45,21 +44,25 @@ export default function ServicePrecompta() {
               <h3>5 heures</h3>
               <div className="price">140 €</div>
               <p>Mise en place initiale</p>
+              <a href={`${BASE_PATH}contact?pack=precompta-5h`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card">
               <h3>10 heures</h3>
               <div className="price">260 €</div>
               <p>Organisation mensuelle</p>
+              <a href={`${BASE_PATH}contact?pack=precompta-10h`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card featured">
               <h3>Mensuel (20h)</h3>
               <div className="price">500 €/mois</div>
               <p>Gestion comptable complète</p>
+              <a href={`${BASE_PATH}contact?pack=precompta-mensuel`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card">
               <h3>Annuel (240h)</h3>
               <div className="price">5 400 €/an</div>
               <p>Partenaire comptable</p>
+              <a href={`${BASE_PATH}contact?pack=precompta-annuel`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
           </div>
           <div className="hourly-rate">
@@ -70,7 +73,7 @@ export default function ServicePrecompta() {
         <section className="cta-section">
           <h2>Une comptabilité sereine</h2>
           <p>Confiez-nous votre pré-comptabilité et présentez des dossiers parfaits à votre expert-comptable.</p>
-          <a href={`${BASE_PATH}contact`} className="btn btn-primary">Demander un diagnostic comptable</a>
+          <a href={`${BASE_PATH}contact?pack=precompta-diagnostic`} className="btn btn-primary">Demander un diagnostic comptable</a>
         </section>
       </main>
       <Footer />

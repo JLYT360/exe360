@@ -15,16 +15,16 @@ import ServiceSupport from './pages/ServiceSupport'
 import './styles.css'
 
 const router = createBrowserRouter([
-  { path: '/', element: <Home /> },
-  { path: '/services', element: <Services /> },
-  { path: '/services/marketing-strategique', element: <ServiceMarketing /> },
-  { path: '/services/assistance-administrative', element: <ServiceAdmin /> },
-  { path: '/services/precomptabilite', element: <ServicePrecompta /> },
-  { path: '/services/support-informatique', element: <ServiceSupport /> },
-  { path: '/tarifs', element: <Pricing /> },
-  { path: '/blog', element: <Blog /> },
-  { path: '/blog/:slug', element: <Article /> },
-  { path: '/contact', element: <Contact /> },
+  { path: '/jlytexe-site/', element: <Home /> },
+  { path: '/jlytexe-site/services', element: <Services /> },
+  { path: '/jlytexe-site/services/marketing-strategique', element: <ServiceMarketing /> },
+  { path: '/jlytexe-site/services/assistance-administrative', element: <ServiceAdmin /> },
+  { path: '/jlytexe-site/services/precomptabilite', element: <ServicePrecompta /> },
+  { path: '/jlytexe-site/services/support-informatique', element: <ServiceSupport /> },
+  { path: '/jlytexe-site/tarifs', element: <Pricing /> },
+  { path: '/jlytexe-site/blog', element: <Blog /> },
+  { path: '/jlytexe-site/blog/:slug', element: <Article /> },
+  { path: '/jlytexe-site/contact', element: <Contact /> },
 ])
 
 const root = createRoot(document.getElementById('root')!)

@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 export default function Contact(){
   const [sent, setSent] = useState(false)
   const [files, setFiles] = useState<File[]>([])
+  const [subject, setSubject] = useState('')
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFiles = Array.from(e.target.files || [])
@@ -29,6 +30,13 @@ export default function Contact(){
               <input required placeholder="Prénom *" name="prenom" />
             </div>
             <input required type="email" placeholder="Email *" name="email" />
+            <select required value={subject} onChange={(e) => setSubject(e.target.value)} name="subject" className="form-select">
+              <option value="">Sélectionnez un type de demande *</option>
+              <option value="marketing">Marketing</option>
+              <option value="informatique">Informatique</option>
+              <option value="compta">Comptabilité</option>
+              <option value="multiconseil">Multi-conseil</option>
+            </select>
             <textarea required placeholder="Votre besoin" name="message" rows={6}></textarea>
             
             <div className="file-upload-section">

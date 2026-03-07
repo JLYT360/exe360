@@ -24,7 +24,7 @@ export default function Pricing(){
               <div className="price">5h</div>
               <p className="price-amount">120€</p>
               <p>Organisation, relances, modèles</p>
-              <a href="/services/assistance-administrative" className="btn btn-primary">Voir les détails</a>
+              <a href="/jlytexe-site/services/assistance-administrative" className="btn btn-primary">Voir les détails</a>
             </div>
 
             <div className="pricing-card">
@@ -32,7 +32,7 @@ export default function Pricing(){
               <div className="price">5h</div>
               <p className="price-amount">140€</p>
               <p>Saisie, préparation, tableaux de bord</p>
-              <a href="/services/precomptabilite" className="btn btn-primary">Voir les détails</a>
+              <a href="/jlytexe-site/services/precomptabilite" className="btn btn-primary">Voir les détails</a>
             </div>
 
             <div className="pricing-card featured">
@@ -40,7 +40,7 @@ export default function Pricing(){
               <div className="price">5h</div>
               <p className="price-amount">200€</p>
               <p>Plans marketing, lancement, croissance</p>
-              <a href="/services/marketing-strategique" className="btn btn-primary">Voir les détails</a>
+              <a href="/jlytexe-site/services/marketing-strategique" className="btn btn-primary">Voir les détails</a>
             </div>
 
             <div className="pricing-card">
@@ -48,7 +48,7 @@ export default function Pricing(){
               <div className="price">5h</div>
               <p className="price-amount">150€</p>
               <p>Dépannage, cloud, formations</p>
-              <a href="/services/support-informatique" className="btn btn-primary">Voir les détails</a>
+              <a href="/jlytexe-site/services/support-informatique" className="btn btn-primary">Voir les détails</a>
             </div>
           </div>
         </section>
@@ -110,7 +110,7 @@ export default function Pricing(){
         <section className="cta-section">
           <h2>Vous avez des questions ?</h2>
           <p>Contactez-moi pour un devis personnalisé</p>
-          <a href="/contact" className="btn-primary">Demander un devis</a>
+          <a href="/jlytexe-site/contact" className="btn btn-primary">Commencer</a>
         </section>
       </main>
       <Footer />

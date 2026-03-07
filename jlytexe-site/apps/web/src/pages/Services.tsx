@@ -27,7 +27,7 @@ export default function Services(){
               <li>Stratégies de croissance (90 jours)</li>
             </ul>
             <div className="service-price">À partir de 45€/h</div>
-            <a href="/services/marketing-strategique" className="btn btn-primary">Voir les forfaits</a>
+            <a href="/jlytexe-site/services/marketing-strategique" className="btn btn-primary">Voir les forfaits</a>
           </div>
 
           <div className="service-card">
@@ -39,7 +39,7 @@ export default function Services(){
               <li>Modèles (devis, factures, procédures)</li>
             </ul>
             <div className="service-price">À partir de 30€/h</div>
-            <a href="/services/assistance-administrative" className="btn btn-primary">Voir les forfaits</a>
+            <a href="/jlytexe-site/services/assistance-administrative" className="btn btn-primary">Voir les forfaits</a>
           </div>
 
           <div className="service-card">
@@ -51,7 +51,7 @@ export default function Services(){
               <li>Suivi factures/dépenses, tableaux de bord</li>
             </ul>
             <div className="service-price">À partir de 35€/h</div>
-            <a href="/services/precomptabilite" className="btn btn-primary">Voir les forfaits</a>
+            <a href="/jlytexe-site/services/precomptabilite" className="btn btn-primary">Voir les forfaits</a>
           </div>
 
           <div className="service-card">
@@ -63,7 +63,7 @@ export default function Services(){
               <li>Formations Word, Excel, Drive</li>
             </ul>
             <div className="service-price">À partir de 35€/h</div>
-            <a href="/services/support-informatique" className="btn btn-primary">Voir les forfaits</a>
+            <a href="/jlytexe-site/services/support-informatique" className="btn btn-primary">Voir les forfaits</a>
           </div>
         </section>
 
@@ -71,8 +71,8 @@ export default function Services(){
           <h2>Prêt à optimiser votre organisation ?</h2>
           <p>Profitez de 1h offerte pour un diagnostic complet et personnalisé</p>
           <div style={{display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '24px'}}>
-            <a href="/contact" className="btn-primary">Diagnostic express</a>
-            <a href="/tarifs" className="btn-secondary">Voir tous les tarifs</a>
+            <a href="/jlytexe-site/contact" className="btn-primary">Diagnostic express</a>
+            <a href="/jlytexe-site/tarifs" className="btn-secondary">Voir tous les tarifs</a>
           </div>
         </section>
       </main>

@@ -65,7 +65,7 @@ export default function ServiceMarketing() {
         <section className="cta-section">
           <h2>Prêt à développer votre activité ?</h2>
           <p>Contactez-nous pour un diagnostic stratégique gratuit de 30 minutes.</p>
-          <a href="/contact" className="btn btn-primary">Demander un diagnostic</a>
+          <a href="/jlytexe-site/contact" className="btn btn-primary">Demander un diagnostic</a>
         </section>
       </main>
       <Footer />

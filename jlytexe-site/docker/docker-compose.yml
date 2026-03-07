@@ -1,0 +1,13 @@
+
+services:
+  web:
+    build: ../apps/web
+    ports:
+      - "8080:80"
+  api:
+    build: ../apps/api
+    environment:
+      - PORT=8787
+      - CORS_ORIGINS=http://localhost:8080,http://localhost:5173
+    ports:
+      - "8787:8787"

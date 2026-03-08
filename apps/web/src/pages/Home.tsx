@@ -21,7 +21,7 @@ export default function Home(){
           <h1>Structurer, piloter, développer.</h1>
           <p className="subtitle">
             Votre activité mérite une organisation claire et un soutien fiable.  
-            Assistance administrative · Pré‑comptabilité (préparation) · Marketing stratégique · Support & Formation — en Martinique.
+            Assistance administrative · Pré‑comptabilité (préparation) · Marketing stratégique · Support & Formation — exe360, Martinique.
           </p>
           <div className="cta-group">
             <Link to={`${BASE_PATH}contact`} className="btn-primary btn-hero">Recevoir un plan d'action gratuit (1h)</Link>

@@ -16,20 +16,20 @@ import LegalMentions from './pages/LegalMentions'
 import './styles.css'
 
 const router = createBrowserRouter([
-  { path: '/jlytexe-site/', element: <><ScrollRestoration /><Home /></> },
-  { path: '/jlytexe-site/services', element: <><ScrollRestoration /><Services /></> },
-  { path: '/jlytexe-site/services/marketing-strategique', element: <><ScrollRestoration /><ServiceMarketing /></> },
-  { path: '/jlytexe-site/services/assistance-administrative', element: <><ScrollRestoration /><ServiceAdmin /></> },
-  { path: '/jlytexe-site/services/precomptabilite', element: <><ScrollRestoration /><ServicePrecompta /></> },
-  { path: '/jlytexe-site/services/support-informatique', element: <><ScrollRestoration /><ServiceSupport /></> },
-  { path: '/jlytexe-site/blog', element: <><ScrollRestoration /><Blog /></> },
-  { path: '/jlytexe-site/blog/:slug', element: <><ScrollRestoration /><Article /></> },
-  { path: '/jlytexe-site/contact', element: <><ScrollRestoration /><Contact /></> },
-  { path: '/jlytexe-site/a-propos', element: <><ScrollRestoration /><About /></> },
-  { path: '/jlytexe-site/aides-financement', element: <><ScrollRestoration /><AidesFinancement /></> },
-  { path: '/jlytexe-site/evaluation-aides', element: <><ScrollRestoration /><EvaluationAides /></> },
-  { path: '/jlytexe-site/mentions-legales', element: <><ScrollRestoration /><LegalMentions /></> },
-  { path: '/jlytexe-site/strategy', element: <><ScrollRestoration /><AidesFinancement /></> },
+  { path: '/exe360/', element: <><ScrollRestoration /><Home /></> },
+  { path: '/exe360/services', element: <><ScrollRestoration /><Services /></> },
+  { path: '/exe360/services/marketing-strategique', element: <><ScrollRestoration /><ServiceMarketing /></> },
+  { path: '/exe360/services/assistance-administrative', element: <><ScrollRestoration /><ServiceAdmin /></> },
+  { path: '/exe360/services/precomptabilite', element: <><ScrollRestoration /><ServicePrecompta /></> },
+  { path: '/exe360/services/support-informatique', element: <><ScrollRestoration /><ServiceSupport /></> },
+  { path: '/exe360/blog', element: <><ScrollRestoration /><Blog /></> },
+  { path: '/exe360/blog/:slug', element: <><ScrollRestoration /><Article /></> },
+  { path: '/exe360/contact', element: <><ScrollRestoration /><Contact /></> },
+  { path: '/exe360/a-propos', element: <><ScrollRestoration /><About /></> },
+  { path: '/exe360/aides-financement', element: <><ScrollRestoration /><AidesFinancement /></> },
+  { path: '/exe360/evaluation-aides', element: <><ScrollRestoration /><EvaluationAides /></> },
+  { path: '/exe360/mentions-legales', element: <><ScrollRestoration /><LegalMentions /></> },
+  { path: '/exe360/strategy', element: <><ScrollRestoration /><AidesFinancement /></> },
 ])
 
 const root = createRoot(document.getElementById('root')!)

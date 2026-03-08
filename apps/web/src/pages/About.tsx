@@ -6,7 +6,7 @@ import jeromePhoto from '../assets/images/Jerome.jpg'
 
 export default function About() {
   useEffect(() => {
-    document.title = 'À propos — Jérôme Loca Yang-Ting, expert en organisation d\'entreprises — Martinique'
+    document.title = 'À propos — Jérôme Loca Yang-Ting — exe360 Martinique'
     const metaDescription = document.querySelector('meta[name="description"]')
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Bonjour, je suis Jérôme. J\'accompagne les indépendants et petites entreprises en Martinique dans leur organisation quotidienne : administratif, préparation comptable, stratégie et numérique.')

@@ -43,7 +43,7 @@ const organismes = [
   {
     nom: 'Initiative Martinique',
     description: 'Microcrédits et prêts d\'honneur pour les créateurs d\'entreprise.',
-    lien: 'https://www.initiative-france.org',
+    lien: 'https://www.ima.mq',
     tag: 'Microcrédit'
   },
   {
@@ -78,7 +78,7 @@ export default function AidesFinancement() {
           </p>
           <div className="disclaimer-box">
             <p>
-              ⚠️ <strong>Important :</strong> L'accompagnement JLYTEXE consiste à identifier et structurer vos demandes.
+              ⚠️ <strong>Important :</strong> L'accompagnement exe360 consiste à identifier et structurer vos demandes.
               L'obtention des aides dépend des organismes concernés et ne peut être garantie.
             </p>
           </div>

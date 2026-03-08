@@ -1,2 +1,2 @@
-export const BASE_PATH = import.meta.env.DEV ? '/' : '/jlytexe-site/'
-export const ASSETS_PATH = import.meta.env.DEV ? '/assets' : '/jlytexe-site/assets'
+export const BASE_PATH = import.meta.env.DEV ? '/' : '/exe360/'
+export const ASSETS_PATH = import.meta.env.DEV ? '/assets' : '/exe360/assets'

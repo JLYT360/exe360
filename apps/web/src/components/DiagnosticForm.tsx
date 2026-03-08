@@ -128,7 +128,7 @@ export default function DiagnosticForm() {
           
           <div className="form-switch">
             <p>OU</p>
-            <a href="/jlytexe-site/contact" className="btn btn-outline">
+            <a href="/exe360/contact" className="btn btn-outline">
               📝 Formulaire détaillé
             </a>
           </div>
@@ -147,10 +147,10 @@ export default function DiagnosticForm() {
             🚀 Je vous contacte sous 2h pour votre diagnostic gratuit !
           </p>
           <div className="success-actions">
-            <a href="/jlytexe-site/contact" className="btn btn-secondary">
+            <a href="/exe360/contact" className="btn btn-secondary">
               🔄 Nouveau diagnostic
             </a>
-            <a href="/jlytexe-site/contact" className="btn btn-outline">
+            <a href="/exe360/contact" className="btn btn-outline">
               📝 Faire une demande détaillée
             </a>
           </div>

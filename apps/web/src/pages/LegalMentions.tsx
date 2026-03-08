@@ -4,10 +4,10 @@ import Footer from '../components/Footer'
 
 export default function LegalMentions() {
   useEffect(() => {
-    document.title = 'Mentions Légales — JLYTEXE Martinique'
+    document.title = 'Mentions Légales — exe360 Martinique'
     const metaDescription = document.querySelector('meta[name="description"]')
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Mentions légales JLYTEXE : statut micro-entreprise, SIRET, hébergeur, RGPD, pré-comptabilité.')
+      metaDescription.setAttribute('content', 'Mentions légales exe360 : statut micro-entreprise, SIRET, hébergeur, RGPD, pré-comptabilité.')
     }
   }, [])
 
@@ -21,11 +21,11 @@ export default function LegalMentions() {
           <section className="legal-section">
             <h2>Éditeur du site</h2>
             <div className="legal-info">
-              <p><strong>Dénomination sociale :</strong> JLYTEXE</p>
+              <p><strong>Dénomination sociale :</strong> exe360</p>
               <p><strong>Forme juridique :</strong> Micro-entreprise</p>
               <p><strong>SIRET :</strong> [À compléter]</p>
               <p><strong>Adresse :</strong> Martinique, 97200</p>
-              <p><strong>Email :</strong> contact@jlytexe.com</p>
+              <p><strong>Email :</strong> contact@exe360.fr</p>
               <p><strong>Téléphone :</strong> [À compléter]</p>
             </div>
           </section>
@@ -34,7 +34,7 @@ export default function LegalMentions() {
             <h2>Directeur de la publication</h2>
             <div className="legal-info">
               <p><strong>Nom :</strong> Jérôme [À compléter]</p>
-              <p><strong>Qualité :</strong> Gérant de la micro-entreprise JLYTEXE</p>
+              <p><strong>Qualité :</strong> Gérant de la micro-entreprise exe360</p>
             </div>
           </section>
 
@@ -50,16 +50,16 @@ export default function LegalMentions() {
           <section className="legal-section">
             <h2>Propriété intellectuelle</h2>
             <div className="legal-info">
-              <p>L'ensemble de ce site, y compris les textes, images, graphismes, logos, et toute autre création, est la propriété exclusive de JLYTEXE.</p>
-              <p>Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ce site, même partielle, est strictement interdite sans l'autorisation écrite préalable de JLYTEXE.</p>
+              <p>L'ensemble de ce site, y compris les textes, images, graphismes, logos, et toute autre création, est la propriété exclusive de exe360.</p>
+              <p>Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ce site, même partielle, est strictement interdite sans l'autorisation écrite préalable de exe360.</p>
             </div>
           </section>
 
           <section className="legal-section">
             <h2>Données personnelles (RGPD)</h2>
             <div className="legal-info">
-              <p><strong>Responsable du traitement :</strong> JLYTEXE</p>
-              <p><strong>Email pour les droits RGPD :</strong> contact@jlytexe.com</p>
+              <p><strong>Responsable du traitement :</strong> exe360</p>
+              <p><strong>Email pour les droits RGPD :</strong> contact@exe360.fr</p>
               
               <h3>Données collectées</h3>
               <p>Nous collectons les données suivantes via nos formulaires de contact :</p>
@@ -99,14 +99,14 @@ export default function LegalMentions() {
                 <li><strong>Droit à la portabilité :</strong> Recevoir vos données dans un format structuré</li>
                 <li><strong>Droit d'opposition :</strong> Vous opposer au traitement de vos données</li>
               </ul>
-              <p>Pour exercer ces droits, contactez-nous à contact@jlytexe.com.</p>
+              <p>Pour exercer ces droits, contactez-nous à contact@exe360.fr.</p>
             </div>
           </section>
 
           <section className="legal-section">
             <h2>Services proposés</h2>
             <div className="legal-info">
-              <p>JLYTEXE propose les services suivants en tant que micro-entreprise :</p>
+              <p>exe360 propose les services suivants en tant que micro-entreprise :</p>
               <ul>
                 <li><strong>Assistance administrative :</strong> Organisation, relances, démarches administratives</li>
                 <li><strong>Pré-comptabilité :</strong> Saisie, préparation des dossiers pour expert-comptable</li>
@@ -127,7 +127,7 @@ export default function LegalMentions() {
           <section className="legal-section">
             <h2>Limitation de responsabilité</h2>
             <div className="legal-info">
-              <p>JLYTEXE s'efforce de fournir des informations précises et à jour sur ce site.</p>
+              <p>exe360 s'efforce de fournir des informations précises et à jour sur ce site.</p>
               <p>Cependant, nous déclinons toute responsabilité pour :</p>
               <ul>
                 <li>Les erreurs ou omissions dans les informations présentées</li>

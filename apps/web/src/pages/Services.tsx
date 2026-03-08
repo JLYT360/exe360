@@ -6,7 +6,7 @@ import { BASE_PATH } from '../config/paths'
 
 export default function Services(){
   useEffect(() => {
-    document.title = 'Services JLYTEXE — Organisation, Pré‑compta (préparation), Marketing — Martinique'
+    document.title = 'Services exe360 — Organisation, Pré‑compta (préparation), Marketing — Martinique'
     const metaDescription = document.querySelector('meta[name="description"]')
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Assistance administrative, pré‑comptabilité (préparation), marketing stratégique, support & formation. Process simple en 5 étapes.')

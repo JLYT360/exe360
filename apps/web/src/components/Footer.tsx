@@ -8,7 +8,9 @@ export default function Footer(){
       <div className="container">
         <div className="footer-content">
           <p className="footer-main">
-            © 2026 JLYT.exe — Martinique.
+            © 2026 exe360 — Martinique.
+            <br />
+            contact : contact@exe360.fr
           </p>
           <p className="footer-services">
             Assistance administrative & pré‑comptabilité = préparation/saisie technique

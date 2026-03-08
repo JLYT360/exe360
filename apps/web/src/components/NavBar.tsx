@@ -9,9 +9,9 @@ export default function NavBar(){
   return (
     <header>
       <div className="nav-container">
-        <Link to={BASE_PATH} className="nav-logo" aria-label="Accueil JLYT.exe">
-          <img src={`${ASSETS_PATH}/images/logo.png`} alt="JLYT.exe" className="logo-image" />
-          <span>JLYT.exe</span>
+        <Link to={BASE_PATH} className="nav-logo" aria-label="Accueil exe360">
+          <img src={`${ASSETS_PATH}/images/logo.png`} alt="exe360" className="logo-image" />
+          <span>exe360</span>
         </Link>
         <nav className="nav-menu" aria-label="Navigation principale">
           <NavLink to={`${BASE_PATH}`} className="nav-link">Accueil</NavLink>

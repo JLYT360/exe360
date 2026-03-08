@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   
   return {
     plugins: [react()],
-    base: isDev ? '/' : '/jlytexe-site/',
+    base: isDev ? '/' : '/exe360/',
     build: {
       outDir: 'dist',
       assetsDir: 'assets'

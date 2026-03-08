@@ -80,7 +80,7 @@ export const sendContactEmail = async (formData: {
         subject: formData.subject,
         message: formData.message,
         from_name: `${formData.prenom} ${formData.nom}`,
-        to_email: 'contact@jlytexe.com', // Votre email de réception
+        to_email: 'contact@exe360.fr', // Votre email de réception
         reply_to: formData.email
       }
     )
@@ -139,9 +139,9 @@ export const sendStrategyEmail = async (formData: StrategyFormData) => {
         telephone: formData.telephone,
         
         from_name: `${formData.prenom} ${formData.nom}`,
-        to_email: 'contact@jlytexe.com',
+        to_email: 'contact@exe360.fr',
         reply_to: formData.email,
-        sujet: 'Nouvelle demande évaluation MQE - JLYTEXE'
+        sujet: 'Nouvelle demande évaluation MQE - exe360'
       }
     )
     return { success: true, response }

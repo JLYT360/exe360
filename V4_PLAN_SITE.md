@@ -31,7 +31,9 @@ exe360/
 │   └── Support & Formation (/exe360/services/support-informatique)
 │       └── Forfaits 5h/10h/mensuel/annuel + diagnostic
 ├── Aides Financement (/exe360/aides-financement)
-│   └── Organismes Martinique (CTM, CCI, BPI, ADIE, IMA.mq ✓)
+│   ├── Hero section avec disclaimer ✅ NOUVEAU
+│   ├── Organismes Martinique (CTM, CCI, BPI, ADIE, IMA.mq ✓)
+│   └── Lien vers évaluation
 ├── Évaluation Aides (/exe360/evaluation-aides)
 │   └── Formulaire complet + EmailJS
 ├── Centre Ressources (/exe360/blog)

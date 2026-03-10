@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: apps/web/dist/
-          server-dir: /home/exefrcm/www/
+          server-dir: ./www/
           dangerous-clean-slate: true

@@ -27,9 +27,9 @@ export default function Footer(){
               Comptes annuels et déclarations fiscales réalisés par un expert‑comptable.
             </p>
             <div className="legal-links">
-              <a href={`${BASE_PATH}mentions-legales`}>Mentions légales</a>
+              <a href={`${BASE_PATH}contact`}>Contact</a>
               <span> • </span>
-              <a href={`${BASE_PATH}politique-confidentialite`}>Politique de confidentialité</a>
+              <a href={`${BASE_PATH}contact`}>Mentions légales</a>
             </div>
           </div>
         </div>

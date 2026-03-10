@@ -1,11 +1,11 @@
 import emailjs from '@emailjs/browser'
 
-// Configuration EmailJS - À remplacer avec vos vraies clés
+// Configuration EmailJS - À remplacer avec vos vraies clés après activation contact@exe360.fr
 export const EMAILJS_CONFIG = {
-  SERVICE_ID: 'YOUR_SERVICE_ID', // Remplacer par votre Service ID EmailJS
-  TEMPLATE_ID_CONTACT: 'YOUR_CONTACT_TEMPLATE_ID', // Template pour formulaire Contact
-  TEMPLATE_ID_STRATEGY: 'YOUR_STRATEGY_TEMPLATE_ID', // Template pour formulaire Strategy
-  PUBLIC_KEY: 'YOUR_PUBLIC_KEY' // Remplacer par votre Public Key EmailJS
+  SERVICE_ID: 'YOUR_SERVICE_ID', // TODO: Remplacer par votre Service ID EmailJS
+  TEMPLATE_ID_CONTACT: 'YOUR_CONTACT_TEMPLATE_ID', // TODO: Template pour formulaire Contact
+  TEMPLATE_ID_STRATEGY: 'YOUR_STRATEGY_TEMPLATE_ID', // TODO: Template pour formulaire Strategy
+  PUBLIC_KEY: 'YOUR_PUBLIC_KEY' // TODO: Remplacer par votre Public Key EmailJS
 }
 
 // Interface pour les données du formulaire Strategy
@@ -91,6 +91,36 @@ export const sendContactEmail = async (formData: {
   }
 }
 
+// Fonction pour envoyer le formulaire de diagnostic
+export async function sendDiagnosticEmail(formData: {
+  nom: string
+  email: string
+  telephone: string
+  subject: string
+  message: string
+}) {
+  try {
+    const response = await emailjs.send(
+      EMAILJS_CONFIG.SERVICE_ID,
+      EMAILJS_CONFIG.TEMPLATE_ID_CONTACT,
+      {
+        from_name: formData.nom,
+        from_email: formData.email,
+        from_phone: formData.telephone || 'Non renseigné',
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'contact@exe360.fr',
+        reply_to: formData.email,
+        sujet: 'Nouvelle demande diagnostic - exe360'
+      }
+    )
+    return { success: true, response }
+  } catch (error) {
+    console.error('EmailJS error:', error)
+    return { success: false, error }
+  }
+}
+
 // Envoyer email depuis le formulaire Strategy
 export const sendStrategyEmail = async (formData: StrategyFormData) => {
   try {
@@ -142,6 +172,36 @@ export const sendStrategyEmail = async (formData: StrategyFormData) => {
         to_email: 'contact@exe360.fr',
         reply_to: formData.email,
         sujet: 'Nouvelle demande évaluation MQE - exe360'
+      }
+    )
+    return { success: true, response }
+  } catch (error) {
+    console.error('EmailJS error:', error)
+    return { success: false, error }
+  }
+}
+
+// Fonction pour envoyer le formulaire de diagnostic
+export async function sendDiagnosticEmail(formData: {
+  nom: string
+  email: string
+  telephone: string
+  subject: string
+  message: string
+}) {
+  try {
+    const response = await emailjs.send(
+      EMAILJS_CONFIG.SERVICE_ID,
+      EMAILJS_CONFIG.TEMPLATE_ID_CONTACT,
+      {
+        from_name: formData.nom,
+        from_email: formData.email,
+        from_phone: formData.telephone || 'Non renseigné',
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'contact@exe360.fr',
+        reply_to: formData.email,
+        sujet: 'Nouvelle demande diagnostic - exe360'
       }
     )
     return { success: true, response }

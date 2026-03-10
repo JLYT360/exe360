@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   
   return {
     plugins: [react()],
-    base: isDev ? '/' : '/exe360/',
+    base: '/',
     build: {
       outDir: 'dist',
       assetsDir: 'assets'

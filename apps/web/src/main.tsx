@@ -16,20 +16,20 @@ import LegalMentions from './pages/LegalMentions'
 import './styles.css'
 
 const router = createBrowserRouter([
-  { path: '/exe360/', element: <><ScrollRestoration /><Home /></> },
-  { path: '/exe360/services', element: <><ScrollRestoration /><Services /></> },
-  { path: '/exe360/services/marketing-strategique', element: <><ScrollRestoration /><ServiceMarketing /></> },
-  { path: '/exe360/services/assistance-administrative', element: <><ScrollRestoration /><ServiceAdmin /></> },
-  { path: '/exe360/services/precomptabilite', element: <><ScrollRestoration /><ServicePrecompta /></> },
-  { path: '/exe360/services/support-informatique', element: <><ScrollRestoration /><ServiceSupport /></> },
-  { path: '/exe360/blog', element: <><ScrollRestoration /><Blog /></> },
-  { path: '/exe360/blog/:slug', element: <><ScrollRestoration /><Article /></> },
-  { path: '/exe360/contact', element: <><ScrollRestoration /><Contact /></> },
-  { path: '/exe360/a-propos', element: <><ScrollRestoration /><About /></> },
-  { path: '/exe360/aides-financement', element: <><ScrollRestoration /><AidesFinancement /></> },
-  { path: '/exe360/evaluation-aides', element: <><ScrollRestoration /><EvaluationAides /></> },
-  { path: '/exe360/mentions-legales', element: <><ScrollRestoration /><LegalMentions /></> },
-  { path: '/exe360/strategy', element: <><ScrollRestoration /><AidesFinancement /></> },
+  { path: '/', element: <><ScrollRestoration /><Home /></> },
+  { path: '/services', element: <><ScrollRestoration /><Services /></> },
+  { path: '/services/marketing-strategique', element: <><ScrollRestoration /><ServiceMarketing /></> },
+  { path: '/services/assistance-administrative', element: <><ScrollRestoration /><ServiceAdmin /></> },
+  { path: '/services/precomptabilite', element: <><ScrollRestoration /><ServicePrecompta /></> },
+  { path: '/services/support-informatique', element: <><ScrollRestoration /><ServiceSupport /></> },
+  { path: '/blog', element: <><ScrollRestoration /><Blog /></> },
+  { path: '/blog/:slug', element: <><ScrollRestoration /><Article /></> },
+  { path: '/contact', element: <><ScrollRestoration /><Contact /></> },
+  { path: '/a-propos', element: <><ScrollRestoration /><About /></> },
+  { path: '/aides-financement', element: <><ScrollRestoration /><AidesFinancement /></> },
+  { path: '/evaluation-aides', element: <><ScrollRestoration /><EvaluationAides /></> },
+  { path: '/mentions-legales', element: <><ScrollRestoration /><LegalMentions /></> },
+  { path: '/strategy', element: <><ScrollRestoration /><AidesFinancement /></> },
 ])
 
 const root = createRoot(document.getElementById('root')!)

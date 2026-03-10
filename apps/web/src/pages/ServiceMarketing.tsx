@@ -1,5 +1,6 @@
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 import { BASE_PATH } from '../config/paths'
 
 export default function ServiceMarketing() {
@@ -40,25 +41,25 @@ export default function ServiceMarketing() {
               <h3>5 heures</h3>
               <div className="price">200 €</div>
               <p>Diagnostic stratégique initial</p>
-              <a href={`${BASE_PATH}contact?pack=marketing-5h`} className="btn btn-primary">Choisir ce forfait</a>
+              <Link to={`${BASE_PATH}contact?pack=marketing-5h`} className="btn btn-primary">Choisir ce forfait</Link>
             </div>
             <div className="pricing-card">
               <h3>10 heures</h3>
               <div className="price">380 €</div>
               <p>Plan d&apos;action complet</p>
-              <a href={`${BASE_PATH}contact?pack=marketing-10h`} className="btn btn-primary">Choisir ce forfait</a>
+              <Link to={`${BASE_PATH}contact?pack=marketing-10h`} className="btn btn-primary">Choisir ce forfait</Link>
             </div>
             <div className="pricing-card featured">
               <h3>Mensuel (10h)</h3>
               <div className="price">350 €/mois</div>
               <p>Accompagnement continu</p>
-              <a href={`${BASE_PATH}contact?pack=marketing-mensuel`} className="btn btn-primary">Choisir ce forfait</a>
+              <Link to={`${BASE_PATH}contact?pack=marketing-mensuel`} className="btn btn-primary">Choisir ce forfait</Link>
             </div>
             <div className="pricing-card">
               <h3>Annuel (120h)</h3>
               <div className="price">3 800 €/an</div>
               <p>Partenaire stratégique</p>
-              <a href={`${BASE_PATH}contact?pack=marketing-annuel`} className="btn btn-primary">Choisir ce forfait</a>
+              <Link to={`${BASE_PATH}contact?pack=marketing-annuel`} className="btn btn-primary">Choisir ce forfait</Link>
             </div>
           </div>
           <div className="hourly-rate">
@@ -69,7 +70,7 @@ export default function ServiceMarketing() {
         <section className="cta-section">
           <h2>Prêt à développer votre activité ?</h2>
           <p>Contactez-nous pour un diagnostic stratégique gratuit de 30 minutes.</p>
-          <a href={`${BASE_PATH}contact?pack=marketing-diagnostic`} className="btn btn-primary">Demander un diagnostic</a>
+          <Link to={`${BASE_PATH}contact?pack=marketing-strategie`} className="btn btn-primary">Demander une stratégie</Link>
         </section>
       </main>
       <Footer />

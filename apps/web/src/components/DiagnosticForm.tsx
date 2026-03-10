@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 interface DiagnosticFormData {
   nom: string
@@ -128,9 +129,9 @@ export default function DiagnosticForm() {
           
           <div className="form-switch">
             <p>OU</p>
-            <a href="/exe360/contact" className="btn btn-outline">
+            <Link to="/contact" className="btn btn-outline">
               📝 Formulaire détaillé
-            </a>
+            </Link>
           </div>
         </form>
       ) : (
@@ -147,12 +148,12 @@ export default function DiagnosticForm() {
             🚀 Je vous contacte sous 2h pour votre diagnostic gratuit !
           </p>
           <div className="success-actions">
-            <a href="/exe360/contact" className="btn btn-secondary">
+            <Link to="/contact" className="btn btn-secondary">
               🔄 Nouveau diagnostic
-            </a>
-            <a href="/exe360/contact" className="btn btn-outline">
+            </Link>
+            <Link to="/contact" className="btn btn-outline">
               📝 Faire une demande détaillée
-            </a>
+            </Link>
           </div>
         </div>
       )}

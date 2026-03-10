@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { BASE_PATH } from '../config/paths'
 
 export default function Footer(){
@@ -27,9 +28,9 @@ export default function Footer(){
               Comptes annuels et déclarations fiscales réalisés par un expert‑comptable.
             </p>
             <div className="legal-links">
-              <a href={`${BASE_PATH}contact`}>Contact</a>
+              <Link to={`${BASE_PATH}contact`}>Contact</Link>
               <span> • </span>
-              <a href={`${BASE_PATH}contact`}>Mentions légales</a>
+              <Link to={`${BASE_PATH}contact`}>Mentions légales</Link>
             </div>
           </div>
         </div>

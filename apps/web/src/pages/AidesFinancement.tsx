@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 import { BASE_PATH } from '../config/paths'
 
 const organismes = [
@@ -83,8 +84,8 @@ export default function AidesFinancement() {
             </p>
           </div>
           <div className="cta-group">
-            <a href={`${BASE_PATH}contact`} className="btn-primary btn-hero">Diagnostic gratuit (1h)</a>
-            <a href={`${BASE_PATH}evaluation-aides`} className="btn-secondary">Évaluer mon éligibilité</a>
+            <Link to={`${BASE_PATH}contact?pack=aides-formation`} className="btn btn-primary">Demander une formation</Link>
+            <Link to={`${BASE_PATH}contact?pack=aides-diagnostic`} className="btn btn-primary">Évaluer mes aides</Link>
           </div>
         </section>
 

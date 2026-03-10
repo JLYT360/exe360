@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 import { BASE_PATH } from '../config/paths'
 
 // Articles importés depuis WordPress (extraits du XML)
@@ -270,9 +271,9 @@ export default function Blog(){
                     <div className="blog-author">
                       <span>Par {article.author}</span>
                     </div>
-                    <a href={`${BASE_PATH}blog/${article.slug}`} className="btn btn-primary">
+                    <Link to={`${BASE_PATH}blog/${article.slug}`} className="btn btn-primary">
                       Lire l'article
-                    </a>
+                    </Link>
                   </div>
                 </article>
               ))}
@@ -395,7 +396,7 @@ export default function Blog(){
         <section className="cta-section">
           <h2>Vous avez des questions sur ces sujets ?</h2>
           <p>Discutons-en lors d'un diagnostic gratuit</p>
-          <a href={`${BASE_PATH}contact`} className="btn-primary">Prendre rendez-vous</a>
+          <Link to={`${BASE_PATH}contact`} className="btn-primary">Prendre rendez-vous</Link>
         </section>
       </main>
       <Footer />

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 import { BASE_PATH } from '../config/paths'
 import { initEmailJS, sendStrategyEmail } from '../lib/emailjs'
 
@@ -129,7 +130,7 @@ export default function EvaluationAides() {
           <div className="success-message">
             <h2>✅ Votre évaluation a bien été envoyée !</h2>
             <p>Nous analysons votre projet et vous recontacterons sous 48h pour discuter des aides adaptées.</p>
-            <a href={`${BASE_PATH}`} className="btn btn-primary">Retour à l\'accueil</a>
+            <Link to={`${BASE_PATH}`} className="btn btn-primary">Retour à l'accueil</Link>
           </div>
         </main>
         <Footer />
@@ -529,9 +530,9 @@ export default function EvaluationAides() {
             <button type="submit" className="btn btn-primary" disabled={loading}>
               {loading ? 'Envoi en cours...' : 'Envoyer mon évaluation'}
             </button>
-            <a href={`${BASE_PATH}aides-financement`} className="btn btn-secondary">
+            <Link to={`${BASE_PATH}aides-financement`} className="btn btn-secondary">
               Retour aux aides
-            </a>
+            </Link>
           </div>
         </form>
       </main>

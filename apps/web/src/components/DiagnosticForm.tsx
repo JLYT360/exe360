@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { initEmailJS, sendDiagnosticEmail } from '../lib/emailjs'
+import { initEmailJS } from '../lib/emailjs'
 
 interface DiagnosticFormData {
   nom: string

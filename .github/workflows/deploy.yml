@@ -35,4 +35,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: apps/web/dist/
           server-dir: /home/exefrcm/www/
-          dangerous-clean-slate: false
+          dangerous-clean-slate: true

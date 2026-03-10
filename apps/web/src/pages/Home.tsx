@@ -24,11 +24,11 @@ export default function Home(){
             Assistance administrative · Pré‑comptabilité (préparation) · Marketing stratégique · Support & Formation — exe360, Martinique.
           </p>
           <div className="cta-group">
-            <Link to={`${BASE_PATH}contact`} className="btn-primary btn-hero">Recevoir un plan d'action gratuit (1h)</Link>
+            <Link to={`${BASE_PATH}contact`} className="btn-primary btn-hero">Recevoir un plan d&apos;action gratuit (1h)</Link>
             <Link to={`${BASE_PATH}services`} className="btn-secondary">Voir les offres</Link>
           </div>
           <p className="micro-value">
-            Je vous réponds habituellement sous 24–48 h ouvrées pour planifier un premier échange.
+            Je vous réponds habituellement sous 24–48h ouvrées pour planifier un premier échange.
           </p>
           <div className="micro-proofs">
             <div className="proof-item">✓ Confidentialité garantie</div>
@@ -44,7 +44,7 @@ export default function Home(){
           </Link>
           <Link to={`${BASE_PATH}services/assistance-administrative`} className="card card-clickable">
             <h3>🗂️ Assistance administrative</h3>
-            <p>Gagnez du temps, gardez l'esprit libre.<br/>Vous restez sur votre métier, je m'occupe du reste.</p>
+            <p>Gagnez du temps, gardez l&apos;esprit libre.<br/>Vous restez sur votre métier, je m&apos;occupe du reste.</p>
             <div className="card-arrow">→</div>
           </Link>
           <Link to={`${BASE_PATH}services/precomptabilite`} className="card card-clickable">

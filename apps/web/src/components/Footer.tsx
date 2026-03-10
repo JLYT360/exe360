@@ -1,5 +1,5 @@
-
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { BASE_PATH } from '../config/paths'
 
 export default function Footer(){
@@ -21,6 +21,7 @@ export default function Footer(){
             <p>
               Micro‑entreprise — SIRET : [TON_SIRET] — Martinique<br />
               contact : [TON_EMAIL]
+              {/* TODO: Remplacer par vraies informations après immatriculation */}
             </p>
             <p className="disclaimer">
               Pré‑comptabilité = assistance (préparation/saisie technique).<br />

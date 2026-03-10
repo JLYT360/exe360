@@ -23,7 +23,7 @@ export default function About() {
               <h1>À propos</h1>
               <p className="about-intro">
                 Bonjour, je suis Jérôme.<br/>
-                J'accompagne les indépendants et petites entreprises en Martinique dans leur organisation quotidienne : administratif, préparation comptable, stratégie et numérique.
+                J&apos;accompagne les indépendants et petites entreprises en Martinique dans leur organisation quotidienne : administratif, préparation comptable, stratégie et numérique.
               </p>
               <p className="about-mission">
                 Mon objectif : vous faire gagner du temps, de la clarté et de la tranquillité.

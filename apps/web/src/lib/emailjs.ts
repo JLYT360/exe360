@@ -91,7 +91,6 @@ export const sendContactEmail = async (formData: {
   }
 }
 
-// Fonction pour envoyer le formulaire de diagnostic
 export async function sendDiagnosticEmail(formData: {
   nom: string
   email: string
@@ -181,7 +180,6 @@ export const sendStrategyEmail = async (formData: StrategyFormData) => {
   }
 }
 
-// Fonction pour envoyer le formulaire de diagnostic
 export async function sendDiagnosticEmail(formData: {
   nom: string
   email: string

@@ -1,9 +1,10 @@
 import emailjs from '@emailjs/browser'
 
 export const EMAILJS_CONFIG = {
-  SERVICE_ID: 'YOUR_SERVICE_ID',
-  TEMPLATE_ID_CONTACT: 'YOUR_CONTACT_TEMPLATE_ID',
-  PUBLIC_KEY: 'YOUR_PUBLIC_KEY'
+  SERVICE_ID: 'service_lxg8fu7',
+  TEMPLATE_ID_CONTACT: 'template_hmzdhwa',
+  TEMPLATE_ID_STRATEGY: 'YOUR_STRATEGY_TEMPLATE_ID',
+  PUBLIC_KEY: 'laQ8E8IZxfZvdJw-A'
 }
 
 export const initEmailJS = () => {

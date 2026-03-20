@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import { BASE_PATH } from '../config/paths'
+import { Link } from 'react-router-dom'
 
 export default function Services(){
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function Services(){
               <li>Stratégies de croissance (90 jours)</li>
             </ul>
             <div className="service-price">À partir de 45€/h</div>
-            <a href={`${BASE_PATH}services/marketing-strategique`} className="btn btn-primary">Voir les forfaits</a>
+            <Link to="/services/marketing-strategique" className="btn btn-primary">Voir les forfaits</Link>
           </div>
 
           <div className="service-card">
@@ -48,7 +48,7 @@ export default function Services(){
               <li>Modèles (devis, factures, procédures)</li>
             </ul>
             <div className="service-price">À partir de 30€/h</div>
-            <a href={`${BASE_PATH}services/assistance-administrative`} className="btn btn-primary">Voir les forfaits</a>
+            <Link to="/services/assistance-administrative" className="btn btn-primary">Voir les forfaits</Link>
           </div>
 
           <div className="service-card">
@@ -60,7 +60,7 @@ export default function Services(){
               <li>Suivi factures/dépenses, tableaux de bord</li>
             </ul>
             <div className="service-price">À partir de 35€/h</div>
-            <a href={`${BASE_PATH}services/precomptabilite`} className="btn btn-primary">Voir les forfaits</a>
+            <Link to="/services/precomptabilite" className="btn btn-primary">Voir les forfaits</Link>
           </div>
 
           <div className="service-card">
@@ -72,7 +72,7 @@ export default function Services(){
               <li>Formations Word, Excel, Drive</li>
             </ul>
             <div className="service-price">À partir de 35€/h</div>
-            <a href={`${BASE_PATH}services/support-informatique`} className="btn btn-primary">Voir les forfaits</a>
+            <Link to="/services/support-informatique" className="btn btn-primary">Voir les forfaits</Link>
           </div>
         </section>
 
@@ -80,7 +80,7 @@ export default function Services(){
           <h2>Prêt à optimiser votre organisation ?</h2>
           <p>Profitez de 1h offerte pour un diagnostic complet et personnalisé</p>
           <div className="cta-buttons">
-            <a href={`${BASE_PATH}contact`} className="btn-primary">Diagnostic express</a>
+            <Link to="/contact" className="btn-primary">Diagnostic express</Link>
           </div>
         </section>
       </main>

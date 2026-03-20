@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import { BASE_PATH, ASSETS_PATH } from '../config/paths'
+import { Link } from 'react-router-dom'
 import jeromePhoto from '../assets/images/Jerome.jpg'
 
 export default function About() {
@@ -38,7 +38,7 @@ export default function About() {
             </div>
           </div>
           <div className="cta-group">
-            <a href={`${BASE_PATH}contact`} className="btn-primary">Discutons de votre projet</a>
+            <Link to="/contact" className="btn-primary">Discutons de votre projet</Link>
           </div>
         </section>
 
@@ -96,8 +96,8 @@ export default function About() {
             <div className="trust-item">✓ Dossiers propres pour votre expert‑comptable</div>
           </div>
           <div className="trust-docs">
-            <a href={`${ASSETS_PATH}/docs/memo-precompta.pdf`} className="doc-link">📄 Mémo pré‑compta</a>
-            <a href={`${ASSETS_PATH}/docs/politique-ethique.pdf`} className="doc-link">📄 Politique éthique</a>
+            <a href="/docs/memo-precompta.pdf" className="doc-link">📄 Mémo pré‑compta</a>
+            <a href="/docs/politique-ethique.pdf" className="doc-link">📄 Politique éthique</a>
           </div>
         </section>
 

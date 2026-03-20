@@ -272,9 +272,8 @@ export default function Contact(){
               >
                 <option value="">Type de demande *</option>
                 <option value="marketing">Marketing stratégique</option>
-                <option value="admin">Assistance administrative</option>
-                <option value="precompta">Pré‑comptabilité (préparation)</option>
-                <option value="support">Support &amp; formation</option>
+                <option value="admin">Administration & pré-comptabilité</option>
+                                <option value="support">Support &amp; formation</option>
                 <option value="autre">Autre</option>
               </select>
               

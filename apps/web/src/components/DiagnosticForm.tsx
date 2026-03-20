@@ -104,7 +104,7 @@ export default function DiagnosticForm() {
             <option value="">Type de demande *</option>
             <option value="marketing">Marketing</option>
             <option value="informatique">Informatique</option>
-            <option value="compta">Comptabilité</option>
+            <option value="admin">Administration & pré-comptabilité</option>
             <option value="multiconseil">Multi-conseil</option>
           </select>
           {errors.subject && <span className="error-message">{errors.subject}</span>}

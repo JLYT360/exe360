@@ -1,6 +1,5 @@
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import { BASE_PATH } from '../config/paths'
 
 export default function ServiceAdmin() {
   return (
@@ -41,25 +40,25 @@ export default function ServiceAdmin() {
               <h3>5 heures</h3>
               <div className="price">120 €</div>
               <p>Mise en place initiale</p>
-              <a href={`${BASE_PATH}contact?pack=admin-5h`} className="btn btn-primary">Choisir ce forfait</a>
+              <a href={`/contact?pack=admin-5h`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card">
               <h3>10 heures</h3>
               <div className="price">220 €</div>
               <p>Organisation complète</p>
-              <a href={`${BASE_PATH}contact?pack=admin-10h`} className="btn btn-primary">Choisir ce forfait</a>
+              <a href={`/contact?pack=admin-10h`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card featured">
               <h3>Mensuel (20h)</h3>
               <div className="price">420 €/mois</div>
               <p>Gestion administrative continue</p>
-              <a href={`${BASE_PATH}contact?pack=admin-mensuel`} className="btn btn-primary">Choisir ce forfait</a>
+              <a href={`/contact?pack=admin-mensuel`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card">
               <h3>Annuel (240h)</h3>
               <div className="price">4 500 €/an</div>
               <p>Partenaire administratif</p>
-              <a href={`${BASE_PATH}contact?pack=admin-annuel`} className="btn btn-primary">Choisir ce forfait</a>
+              <a href={`/contact?pack=admin-annuel`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
           </div>
           <div className="hourly-rate">
@@ -70,7 +69,7 @@ export default function ServiceAdmin() {
         <section className="cta-section">
           <h2>Simplifiez votre administration</h2>
           <p>Laissez-nous gérer vos tâches administratives pour vous concentrer sur votre cœur de métier.</p>
-          <a href={`${BASE_PATH}contact?pack=admin-devis`} className="btn btn-primary">Demander un devis</a>
+          <a href={`/contact?pack=admin-devis`} className="btn btn-primary">Demander un devis</a>
         </section>
       </main>
       <Footer />

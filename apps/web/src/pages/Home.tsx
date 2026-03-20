@@ -47,9 +47,9 @@ export default function Home(){
             <p>Gagnez du temps, gardez l&apos;esprit libre.<br/>Vous restez sur votre métier, je m&apos;occupe du reste.</p>
             <div className="card-arrow">→</div>
           </Link>
-          <Link to={`${BASE_PATH}services/precomptabilite`} className="card card-clickable">
-            <h3>🧾 Pré‑comptabilité (préparation)</h3>
-            <p>Préparation fiable pour votre expert-comptable.<br/>Dossier propre, zéro relance, moins de stress.</p>
+          <Link to="/contact" className="card card-clickable">
+            <h3>📋 Aides & Subventions</h3>
+            <p>Identification des financements disponibles.<br/>Subventions, prêts d&apos;honneur, dispositifs Martinique.</p>
             <div className="card-arrow">→</div>
           </Link>
           <Link to={`${BASE_PATH}services/support-informatique`} className="card card-clickable">

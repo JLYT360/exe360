@@ -1,6 +1,5 @@
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import { BASE_PATH } from '../config/paths'
 
 export default function ServicePrecompta() {
   return (
@@ -44,25 +43,25 @@ export default function ServicePrecompta() {
               <h3>5 heures</h3>
               <div className="price">140 €</div>
               <p>Mise en place initiale</p>
-              <a href={`${BASE_PATH}contact?pack=precompta-5h`} className="btn btn-primary">Choisir ce forfait</a>
+              <a href={`/contact?pack=precompta-5h`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card">
               <h3>10 heures</h3>
               <div className="price">260 €</div>
               <p>Organisation mensuelle</p>
-              <a href={`${BASE_PATH}contact?pack=precompta-10h`} className="btn btn-primary">Choisir ce forfait</a>
+              <a href={`/contact?pack=precompta-10h`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card featured">
               <h3>Mensuel (20h)</h3>
               <div className="price">500 €/mois</div>
               <p>Gestion comptable complète</p>
-              <a href={`${BASE_PATH}contact?pack=precompta-mensuel`} className="btn btn-primary">Choisir ce forfait</a>
+              <a href={`/contact?pack=precompta-mensuel`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
             <div className="pricing-card">
               <h3>Annuel (240h)</h3>
               <div className="price">5 400 €/an</div>
               <p>Partenaire comptable</p>
-              <a href={`${BASE_PATH}contact?pack=precompta-annuel`} className="btn btn-primary">Choisir ce forfait</a>
+              <a href={`/contact?pack=precompta-annuel`} className="btn btn-primary">Choisir ce forfait</a>
             </div>
           </div>
           <div className="hourly-rate">
@@ -73,7 +72,7 @@ export default function ServicePrecompta() {
         <section className="cta-section">
           <h2>Une comptabilité sereine</h2>
           <p>Confiez-nous votre pré-comptabilité et présentez des dossiers parfaits à votre expert-comptable.</p>
-          <a href={`${BASE_PATH}contact?pack=precompta-diagnostic`} className="btn btn-primary">Demander un diagnostic comptable</a>
+          <a href={`/contact?pack=precompta-diagnostic`} className="btn btn-primary">Demander un diagnostic comptable</a>
         </section>
       </main>
       <Footer />

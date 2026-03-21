@@ -1097,24 +1097,27 @@ footer {
   display: flex;
   align-items: center;
   font-size: 24px;
-  font-weight: 700;
   letter-spacing: -1px;
 }
 
 .logo-exe {
   color: var(--brand-black);
+  font-weight: 400;
 }
 
 .logo-three {
   color: var(--brand-yellow);
+  font-weight: 700;
 }
 
 .logo-six {
   color: var(--brand-green);
+  font-weight: 700;
 }
 
 .logo-zero {
   color: var(--brand-blue);
+  font-weight: 700;
 }
 
 .nav-logo {
@@ -1145,7 +1148,7 @@ footer {
 .nav-link {
   color: var(--brand-black);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   padding: 8px 16px;
   border-radius: 6px;
   transition: all 0.2s ease;

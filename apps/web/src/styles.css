@@ -31,7 +31,7 @@ body::before {
 
 /* Background image UNIQUEMENT sur la Home (perf + lisibilité) */
 body.home-page {
-  background-image: url('/exe360/assets/images/accueil.JPG');
+  background-image: url('/assets/images/accueil_SD.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

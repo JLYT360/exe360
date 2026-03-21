@@ -9,7 +9,7 @@ export default function NavBar(){
     <header>
       <div className="nav-container">
         <Link to="/" className="nav-logo" aria-label="Accueil exe360">
-          <img src="/assets/images/logo.png" alt="exe360" className="logo-image" />
+          <img src="/assets/images/logo_exe360/2.png" alt="exe360" className="logo-image" />
           <span>exe360</span>
         </Link>
         <nav className="nav-menu" aria-label="Navigation principale">

@@ -3,8 +3,13 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ /index.html [QSA,L]
 
-<FilesMatch "\.(css|js)$">
-    Header set Content-Type ""
+# Force correct MIME types
+<FilesMatch "\.css$">
+    Header set Content-Type "text/css"
+</FilesMatch>
+
+<FilesMatch "\.js$">
+    Header set Content-Type "application/javascript"
 </FilesMatch>
 
 AddType text/css .css

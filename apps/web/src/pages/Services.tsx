@@ -52,18 +52,6 @@ export default function Services(){
           </div>
 
           <div className="service-card">
-            <div className="service-icon">🧾</div>
-            <h3>Pré‑comptabilité</h3>
-            <p>Saisie &amp; préparation pour l&apos;expert-comptable, tableaux de bord.</p>
-            <ul>
-              <li>Saisie de pièces, préparation pour votre expert-comptable</li>
-              <li>Suivi factures/dépenses, tableaux de bord</li>
-            </ul>
-            <div className="service-price">À partir de 35€/h</div>
-            <Link to="/services/precomptabilite" className="btn btn-primary">Voir les forfaits</Link>
-          </div>
-
-          <div className="service-card">
             <div className="service-icon">💻</div>
             <h3>Support & Formation</h3>
             <p>Dépannage, cloud, sécurité basique, Word/Excel/Drive.</p>

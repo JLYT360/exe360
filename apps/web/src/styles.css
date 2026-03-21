@@ -1092,7 +1092,7 @@ footer {
 }
 
 .logo-image {
-  height: 40px;
+  height: 80px;
   width: auto;
   transition: transform 0.2s ease;
 }

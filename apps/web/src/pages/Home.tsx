@@ -37,22 +37,17 @@ export default function Home(){
           </div>
         </section>
         <section className="grid">
-          <Link to={`${BASE_PATH}services/marketing-strategique`} className="card card-clickable">
+          <Link to="/contact" className="card card-clickable">
             <h3>🎯 Marketing stratégique</h3>
             <p>Stratégie claire pour votre croissance.<br/>Avancez avec une direction précise et mesurable.</p>
             <div className="card-arrow">→</div>
           </Link>
-          <Link to={`${BASE_PATH}services/assistance-administrative`} className="card card-clickable">
+          <Link to="/contact" className="card card-clickable">
             <h3>🗂️ Assistance administrative</h3>
             <p>Gagnez du temps, gardez l&apos;esprit libre.<br/>Vous restez sur votre métier, je m&apos;occupe du reste.</p>
             <div className="card-arrow">→</div>
           </Link>
           <Link to="/contact" className="card card-clickable">
-            <h3>📋 Aides & Subventions</h3>
-            <p>Identification des financements disponibles.<br/>Subventions, prêts d&apos;honneur, dispositifs Martinique.</p>
-            <div className="card-arrow">→</div>
-          </Link>
-          <Link to={`${BASE_PATH}services/support-informatique`} className="card card-clickable">
             <h3>💻 Support & Formation</h3>
             <p>Votre numérique, maîtrisé et simplifié.<br/>Cloud, sécurité, Word/Excel/Drive.</p>
             <div className="card-arrow">→</div>

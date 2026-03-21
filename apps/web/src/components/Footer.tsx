@@ -20,7 +20,6 @@ export default function Footer(){
           <div className="footer-legal">
             <p>
               Micro‑entreprise — SIRET : [TON_SIRET] — Martinique<br />
-              contact : [TON_EMAIL]
               {/* TODO: Remplacer par vraies informations après immatriculation */}
             </p>
             <p className="disclaimer">

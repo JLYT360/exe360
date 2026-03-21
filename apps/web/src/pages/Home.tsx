@@ -24,8 +24,7 @@ export default function Home(){
             Assistance administrative · Pré‑comptabilité (préparation) · Marketing stratégique · Support & Formation — exe360, Martinique.
           </p>
           <div className="cta-group">
-            <Link to={`${BASE_PATH}contact`} className="btn-primary btn-hero">Recevoir un plan d&apos;action gratuit (1h)</Link>
-            <Link to={`${BASE_PATH}services`} className="btn-secondary">Voir les offres</Link>
+            <Link to="/contact" className="btn-primary btn-hero">Recevoir un plan d&apos;action gratuit (1h)</Link>
           </div>
           <p className="micro-value">
             Je vous réponds habituellement sous 24–48h ouvrées pour planifier un premier échange.
